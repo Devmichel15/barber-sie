@@ -1,4 +1,11 @@
+
+
 const Landing = () => {
+
+  const CallAssistent = () => {
+    window.open("https://wa.me/244900000000", "_blank");
+    console.log("WhatsApp link clicked");
+  }
   return (
     <div className="landing">
       {/* HERO */}
@@ -131,7 +138,7 @@ const Landing = () => {
         <h2>Contato</h2>
         <p>📍 Rua da Independência, Luanda</p>
         <p>📞 +244 900 000 000</p>
-        <a href="https://wa.me/244900000000" className="btn">
+        <a href="https://wa.me/244900000000" className="btn" onClick={CallAssistent}>
           Falar no WhatsApp
         </a>
       </section>
